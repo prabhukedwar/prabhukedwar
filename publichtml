@@ -1,0 +1,30 @@
+composer create-project --prefer-dist laravel/laravel my-laravel-project
+php artisan make:controller SimpleController
+use App\Http\Controllers\SimpleController;
+
+Route::get('/hello', [SimpleController::class, 'sayHello']);
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class SimpleController extends Controller
+{
+    public function sayHello()
+    {
+        return view('hello', ['name' => 'World']);
+    }
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, {{ $name }}!</h1>
+</body>
+</html>
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/your-repo-name.git
+git push -u origin master

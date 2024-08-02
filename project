@@ -1,0 +1,13 @@
+my-laravel-project/
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       └── SimpleController.php
+├── resources/
+│   └── views/
+│       └── hello.blade.php
+├── routes/
+│   └── web.php
+├── .gitignore
+├── composer.json
+└── ...
